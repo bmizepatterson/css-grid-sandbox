@@ -1,0 +1,66 @@
+body {
+    margin: 1rem;
+    font-family: Helvetica;
+    line-height: 1.25;
+    background: #fdfdfd;
+}
+h1 {
+    padding: 1rem;
+    border: 1px solid black;
+}
+h2 {
+    margin-top: 5rem;
+}
+h2 small {
+    color: #999;
+    font-weight: normal;
+}
+.grid {
+    display:grid;
+    border:1px solid red;
+    padding: 1rem;
+}
+.grid div {
+    padding: 1rem;
+    border: 1px solid blue;
+    background: #eee;
+}
+.exhibit-A {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.exhibit-B {
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1rem;
+}
+.exhibit-C {
+    grid-template-columns: repeat(10, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.exhibit-D {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main   main   ...... sidebar"
+        "footer footer footer footer";
+}
+.exhibit-E {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.exhibit-F {
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 1rem;
+}
+.exhibit-G {
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+.exhibit-H {
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 1rem;
+    justify-content: space-around;
+}
